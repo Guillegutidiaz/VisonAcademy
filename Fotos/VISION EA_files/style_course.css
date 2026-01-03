@@ -1,0 +1,241 @@
+/* ================= ROOT ================= */
+:root {
+  --bg-main: #f8f8f8;
+  --bg-soft: #efefef;
+  --text-main: #000000;
+  --text-muted: #333333;
+  --border: #000000;
+}
+
+/* ================= BASE ================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ================= NAVBAR ================= */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--bg-main);
+  border-bottom: 1px solid var(--border);
+
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header strong {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+}
+
+nav a {
+  margin-left: 32px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+nav a:hover {
+  color: var(--text-main);
+}
+
+/* ================= HERO / TITULO ================= */
+.titulo {
+  position: relative;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.titulo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,0.98)
+  );
+  z-index: 1;
+}
+
+.titulo-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-content h1 {
+  font-size: clamp(3rem, 6vw, 4.2rem);
+  font-weight: 800;
+  letter-spacing: -1.4px;
+  margin-bottom: 32px;
+}
+
+.titulo-content p {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ================= LEARN SECTIONS ================= */
+.learn-section {
+  padding: 120px 32px;
+}
+
+.learn-section.soft {
+  background: var(--bg-soft);
+}
+
+.learn-text {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.learn-text h2 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.section-lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.learn-text p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  margin-bottom: 22px;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+.learn-text ul {
+  list-style: none;
+  margin: 36px auto 42px;
+  max-width: 860px;
+}
+
+.learn-text li {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 22px;
+}
+
+.learn-text li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+}
+
+/* ================= BUTTONS ================= */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 2px solid black;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: black;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: white;
+  color: black;
+}
+
+.btn-secondary {
+  background: white;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background: black;
+  color: white;
+}
+
+/* Centrar botones */
+.learn-text a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 32px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .titulo-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .learn-text h2 {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 18px 20px;
+  }
+
+  nav a {
+    margin-left: 16px;
+  }
+
+  .titulo {
+    min-height: 70vh;
+  }
+
+  .learn-section {
+    padding: 80px 20px;
+  }
+
+  .learn-text p,
+  .learn-text ul {
+    max-width: 100%;
+  }
+}

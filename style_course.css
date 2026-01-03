@@ -1,0 +1,166 @@
+:root {
+  --bg-main: #f8f8f8;
+  --bg-soft: #efefef;
+  --text-main: #000;
+  --text-muted: #333;
+  --accent: #00c896;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+
+/* NAVBAR */
+header {
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+
+nav a { margin-left: 32px; font-size: .95rem; }
+
+/* HERO */
+.titulo {
+  position: relative;
+  min-height: 30vh;     /* 👈 menos alto */
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;  /* 👈 control arriba y abajo */
+}
+
+
+.titulo-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#dbdbdb, #fff);
+}
+
+.titulo-content {
+  font-size: clamp(1.5rem, 1.5vw, 5rem);
+  max-width: 1500px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.titulo-content p {
+  font-size: 1rem;              /* 👈 más pequeño */
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.55;            /* 👈 mejor lectura */
+}
+
+/* Títulos de sección más grandes (GLOBAL) */
+.learn-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+
+/* SECTIONS */
+.learn-section { padding: 60px 32px; }
+.learn-section.soft { background: var(--bg-soft); }
+
+.learn-text { max-width: 1100px; margin: auto; }
+.learn-text > * { margin-left: 80px; }
+
+.learn-text h2 { margin-bottom: 20px; }
+.section-lead { margin-bottom: 15px; }
+
+.learn-text p,
+.learn-text ul { max-width: 1000px; }
+
+.learn-text ul { padding-left: 0; }
+.learn-text li { list-style-position: inside; }
+
+/* BUTTONS */
+.btn-primary,
+.btn-secondary {
+  padding: 11px 26px;
+  font-size: .95rem;
+  border-radius: 999px;
+  border: 1.5px solid var(--accent);
+  font-weight: 500;
+}
+
+.btn-primary {
+  
+  background: #00c896;
+  color: #000;
+
+  display: inline-flex;          /* 👈 CLAVE */
+  align-items: center;           /* 👈 centra vertical */
+  justify-content: center;       /* 👈 centra horizontal */
+
+  padding: 11px 26px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 999px;
+  border: 1.5px solid #00c896;
+
+  line-height: 1;                /* 👈 evita desplazamientos */
+  white-space: nowrap;
+
+}
+
+.btn-secondary {
+  background: #00c896;
+  color: #000;
+}
+
+/* Separación vertical de botones principales */
+.learn-text > .btn-primary,
+.learn-text > .btn-secondary {
+  margin-top:30px;     /* 👈 separa del contenido de arriba */
+  margin-bottom: 15px;  /* 👈 separa de la siguiente sección */
+}
+
+
+/* Tutorials / Materials */
+.tutorials-list-block {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid #ddd;
+  max-width: 1000px;
+}
+
+.tutorial-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 32px;
+  padding: 16px 0;
+}
+
+.tutorial-item + .tutorial-item {
+  border-top: 1px solid #eee;
+}
+
+.tutorial-info p { max-width: 640px; }
+
+/* ---------- FOOTER ---------- */
+    footer {
+      background: #000000;
+      color: #ffffff;
+      padding: 40px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+
+
