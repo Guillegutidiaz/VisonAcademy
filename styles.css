@@ -111,8 +111,6 @@
     }
 
 
-   
-
     /* ---------- titulo ---------- */
     .hero h1 {
       font-weight: 1000;
@@ -219,15 +217,28 @@
       margin-bottom: 10px;
     }
 
-    .split-media {
+    
+
+    .foto1 img {
       width: 100%;
-      height: 360px;
-      border-radius: 24px;
-      background: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.06),
-        rgba(0, 0, 0, 0.02)
-      );
+      height: 110%;
+      object-fit: contain;
+      display: block;
+      border-radius: 20px;
+      
+    }
+
+
+      .foto2 {
+      width: 100%;
+    }
+
+    .foto2 img {
+      width: 100%;
+      height: auto;        
+      object-fit: contain;
+      display: block;
+      border-radius: 20px;
     }
 
     /* ---------- SEPARADOR ---------- */
@@ -330,46 +341,98 @@
       gap: 10px;
     }
 
-    /* Card individual */
-    .need-card {
-      background: #ffffff;
-      border-radius: 20px;
-      padding: 20px 20px;
-      text-align: center;
-      box-shadow: 0 12px 32px rgba(0,0,0,0.06);
-      
+    
+
+  
+
+
+
+        /* ---------- FOOTER GENERAL ---------- */
+    .footer {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+
+    /* ---------- FRANJA SUPERIOR ---------- */
+    .footer-top {
+      background: #0f2b40; /* azul oscuro elegante */
+      color: #fff;
+      padding: 48px 24px;
 
       display: flex;
       flex-direction: column;
       align-items: center;
+      gap: 32px;
     }
 
-    /* Espacio para imagen / icono */
-    .need-media {
-      width: 100%;
-      height: 150px;
-      border-radius: 16px;
-      background-color: #ffffff;
-      margin-bottom: 20px;
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 18px;
     }
 
-    /* Texto */
-    .need-card p {
-      font-size: 0.95rem;
-      font-weight: 500;
+    .footer-nav a {
+      color: #ffffff;
+      font-size: 0.85rem;
+      text-decoration: none;
+      letter-spacing: 0.5px;
     }
 
-    /* ---------- FOOTER ---------- */
-    footer {
-      background: #e4e4e4;
-      color: #777777;
-      padding: 20px 24px;
+    .footer-nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Social icons (placeholder simple) */
+    .footer-social {
+      display: flex;
+      gap: 16px;
+    }
+
+    .footer-social a {
+      width: 32px;
+      height: 32px;
+      background: #00c896;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    /* ---------- FRANJA INFERIOR ---------- */
+    .footer-bottom {
+      background: #f8f8f8;
+      color: #333;
+      padding: 56px 24px;
+    }
+
+    .footer-bottom .copyright {
       text-align: center;
-      font-size: 0.6rem;
-      text-align: justify;
-      text-justify: inter-word;
-      
+      margin-bottom: 32px;
+      font-size: 0.85rem;
+      color: #555;
     }
+
+    .footer-legal {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .footer-legal h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 24px 0 8px;
+    }
+
+    .footer-legal p {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #555;
+    }
+
 
     /* ---------- RESPONSIVE ---------- */
     @media (max-width: 900px) {
@@ -388,9 +451,38 @@
     }
 
 
+.need-media {
+  width: 100%;
+  height: 150px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  
 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+/* Imágenes individuales */
+.need-media.sp500 {
+  background-image: url("../Fotos/SP500.jpeg");
+}
 
+.need-media.nas100 {
+  background-image: url("../Fotos/nasdaq.jpeg");
+}
+
+.need-media.dax40 {
+  background-image: url("../Fotos/dax40.jpeg");
+}
+
+.need-media.fr40 {
+  background-image: url("../Fotos/fr40.jpeg");
+}
+
+.need-media.eth {
+  background-image: url("../Fotos/eth.jpeg");
+}
 
 
 
