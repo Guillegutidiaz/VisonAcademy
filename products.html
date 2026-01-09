@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Vision EA – Experts</title>
+  <title>VisionEA – Experts</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 
 <header>
   <strong>VisionEA</strong>
-  <nav class="nav-right">
+  <nav>
     <a href="index.html">HOME</a>
     <a href="products.html">EXPERTS</a>
     <a href="course.html">TRAINING</a>
@@ -26,67 +26,72 @@
   </nav>
 </header>
 
-
-
 <!-- ================= VISION BALANCE ================= -->
-<section class="category-section">
+<section class="section full-bg">
+  <div class="container">
 
-  <h2 class="category-title">Vision Balance</h2>
+    <h2 class="category-title">Vision Balance</h2>
 
-  <!-- 🔧 era <section>, ahora <div> -->
-  <div class="stats-section">
     <div class="stats-grid">
-      <div class="stat-card"><h3>Markets</h3><p>Index · Crypto</p></div>
+      <div class="stat-card"><h3>Markets</h3><p>Indices · Crypto</p></div>
       <div class="stat-card"><h3>Avg. Winrate</h3><p>~80%</p></div>
-      <div class="stat-card"><h3>Monthly profit</h3><p>~6%</p></div>
+      <div class="stat-card"><h3>Monthly Profit</h3><p>~6%</p></div>
       <div class="stat-card"><h3>Max Drawdown</h3><p>5%</p></div>
-      <div class="stat-card"><h3>Risk Control</h3><p>Dinamic SL & TP</p></div>
+      <div class="stat-card"><h3>Risk Control</h3><p>Dynamic SL & TP</p></div>
     </div>
 
-    <!-- Descripcion -->
-   <div class="description">
+    <div class="description">
+      <p>
+        Our balance is built on a diversified, rule-based trading framework operating
+        across multiple markets. Strategies focus on execution quality, market structure
+        and strict risk control rather than prediction.
+      </p>
 
-  <!-- Definición -->
-  <p>
-    Our balance is built on a diversified, rule-based trading framework designed to operate across multiple markets as stock indices and cryptocurrencies. Each strategy is developed with a clear focus on market structure, execution quality and risk control, aiming for consistent behavior across different market conditions rather than short-term prediction.
-  </p>
+      <ul class="key-points">
+        <li>Trades executed only under predefined conditions</li>
+        <li>Execution adapted to liquidity and volatility</li>
+        <li>Strict drawdown and exposure control</li>
+        <li>No continuous trading in unfavorable environments</li>
+        <li>Internal testing and validation before release</li>
+      </ul>
 
-  <!-- Puntos clave -->
-  <ul class="key-points">
-    <li>Strategies operate only when predefined market and execution conditions are met.</li>
-    <li>Execution logic is adapted to each asset class, taking into account liquidity and volatility.</li>
-    <li>Risk exposure is controlled through predefined limits and execution filters.</li>
-    <li>Systems are not designed to trade continuously or under all market environments.</li>
-    <li>Each strategy undergoes internal quality control, including historical testing and drawdown evaluation.</li>
-  </ul>
+      <p class="figures">
+        Performance figures shown correspond to 2024–2025 and are updated quarterly.
+      </p>
+    </div>
 
-  <!-- Nota de performance -->
-  <p class="figures">
-    Performance figures shown correspond to the 2024–2025 period, are updated quarterly and are provided for informational purposes only.
-  </p>
-
-</div>
+  </div>
 </section>
 
-<!-- ================= SP ================= -->
-<section class="category-section">
-  <div class="bot-block">
-    <h3 class="bot-title">S&P500 INDEX</h3>
+<!-- ================= BOTS ================= -->
+<section class="section alt-bg">
+  <div class="container">
 
+    <h2 class="category-title">Expert Advisors</h2>
 
-    <div class="bot-metrics">
-      <div class="metric-card"><span>Winrate</span><strong>~85%</strong></div>
-      <div class="metric-card"><span>Yearly profit</span><strong>~15%</strong></div>
-      <div class="metric-card"><span>Profit Factor</span><strong>&gt; 5.0</strong></div>
-      <div class="metric-card"><span>Risk Control</span><strong>Dinamic SL / TP</strong></div>
-      <div class="metric-card"><span>Max Drawdown</span><strong>5%</strong></div>
-      <div class="metric-card"><span>Nº Order</span><strong>15</strong></div>
-    </div>
+    <!-- ================= SP500 BOT ================= -->
+    <div class="bot-block" data-product="sp500">
 
-    <div class="bot-content">
+      <div class="bot-header sp500"></div>
 
-      <div class="bot-description">
-        <p>
+      <p class="bot-tagline">
+        Structured trend-following EA for US equity markets.
+      </p>
+
+      <div class="bot-metrics">
+        <div class="metric-card"><span>Winrate</span><strong>~85%</strong></div>
+        <div class="metric-card"><span>Yearly Profit</span><strong>~15%</strong></div>
+        <div class="metric-card"><span>Max DD</span><strong>5%</strong></div>
+        <div class="metric-card"><span>Timeframe</span><strong>H4</strong></div>
+      </div>
+
+      <details class="bot-details">
+        <summary>View system details</summary>
+
+        <div class="bot-content">
+
+          <div class="bot-description">
+            <p>
           Trading algorithm EA designed for the S&P 500, operating on 4-hour candles (H4) to capture medium-term trends with reduced market noise.
         <p>
           The strategy trades selectively during optimized market hours and applies dynamic Stop Loss and Take Profit management, adapting to volatility and market structure.
@@ -94,36 +99,50 @@
           Built with a strong focus on risk control and capital preservation, the EA avoids overtrading and targets consistent performance through disciplined execution.
         </p>
 
-        <div class="bot-cta inline">
-          <a href="#" class="btn-primary">Purchase</a>
+            <div class="bot-cta">
+              <label class="license-label">
+                Select license type
+              </label>
+
+              <select class="license-select">
+                <option value="monthly">Monthly subscription</option>
+                <option value="annual">Annual subscription</option>
+                <option value="lifetime">Lifetime license</option>
+              </select>
+
+              <a class="btn-primary buy-btn">
+                Purchase EA
+              </a>
+            </div>
+          </div>
+
+          <div class="bot-video">
+            <iframe
+              src="https://www.youtube.com/embed/VIDEO_ID"
+              allowfullscreen>
+            </iframe>
+          </div>
+
         </div>
-      </div>
-
-      <div class="bot-video">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
-      </div>
+      </details>
 
     </div>
+
+<div class="bot-block">
+  <div class="bot-header nasdaq"></div>
+  <p class="bot-tagline">Momentum-driven EA for US tech markets</p>
+
+  <div class="bot-metrics">
+    <div class="metric-card"><span>Winrate</span><strong>~70%</strong></div>
+    <div class="metric-card"><span>Yearly Profit</span><strong>~35%</strong></div>
+    <div class="metric-card"><span>Max DD</span><strong>5%</strong></div>
+    <div class="metric-card"><span>Timeframe</span><strong>H4</strong></div>
   </div>
-</section>
 
-<!-- ================= NAS ================= -->
-<section class="category-section">
-  <div class="bot-block">
-    <h3 class="bot-title">NASDAQ 100 INDEX</h3>
-
-
-    <div class="bot-metrics">
-      <div class="metric-card"><span>Winrate</span><strong>~70%</strong></div>
-      <div class="metric-card"><span>Yearly profit</span><strong>~35%</strong></div>
-      <div class="metric-card"><span>Profit Factor</span><strong>&gt; 5.0xxx</strong></div>
-      <div class="metric-card"><span>Risk Control</span><strong>Dinamic SL / TP</strong></div>
-      <div class="metric-card"><span>Max Drawdown</span><strong>5xx%</strong></div>
-      <div class="metric-card"><span>Nº Order</span><strong>71</strong></div>
-    </div>
+  <details class="bot-details">
+    <summary>View system details</summary>
 
     <div class="bot-content">
-
       <div class="bot-description">
         <p>
         EA designed to trade the NASDAQ index, focusing on medium-term trends driven by technology-sector momentum. Running on H4 candles, the system filters out short-term noise while capturing sustained directional moves.
@@ -133,39 +152,47 @@
           The EA is optimized for consistency and stability, offering a rules-based approach to NASDAQ trading with a strong emphasis on risk-adjusted performance.
         </p>
 
-        <div class="bot-cta inline">
-          <a href="#" class="btn-primary">Purchase</a>
+        <div class="bot-cta">
+          <label for="nasdaq-license">Select license</label>
+          <select id="nasdaq-license" class="license-select">
+            <option value="monthly">Monthly</option>
+            <option value="annual">Annual</option>
+            <option value="lifetime">Lifetime</option>
+          </select>
+
+          <a
+            id="nasdaq-buy"
+            class="btn-primary"
+            href="checkout.html?product=nasdaq&license=monthly">
+            Purchase EA
+          </a>
         </div>
       </div>
 
       <div class="bot-video">
         <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
       </div>
-
     </div>
+  </details>
+</div>
+
+<div class="bot-block">
+  <div class="bot-header dax"></div>
+  <p class="bot-tagline">High-volatility European index EA.</p>
+
+  <div class="bot-metrics">
+    <div class="metric-card"><span>Winrate</span><strong>~85%</strong></div>
+    <div class="metric-card"><span>Yearly Profit</span><strong>~15%</strong></div>
+    <div class="metric-card"><span>Max DD</span><strong>5%</strong></div>
+    <div class="metric-card"><span>Timeframe</span><strong>H4</strong></div>
   </div>
-</section>
 
-
-<!-- ================= DAX ================= -->
-<section class="category-section">
-  <div class="bot-block">
-    <h3 class="bot-title">DAX40 INDEX</h3>
-
-
-    <div class="bot-metrics">
-      <div class="metric-card"><span>Winrate</span><strong>~85%</strong></div>
-      <div class="metric-card"><span>Yearly profit</span><strong>~15%</strong></div>
-      <div class="metric-card"><span>Profit Factor</span><strong>&gt; 5.0</strong></div>
-      <div class="metric-card"><span>Risk Control</span><strong>Dinamic SL / TP</strong></div>
-      <div class="metric-card"><span>Max Drawdown</span><strong>5xx%</strong></div>
-      <div class="metric-card"><span>Nº Order</span><strong>8</strong></div>
-    </div>
+  <details class="bot-details">
+    <summary>View system details</summary>
 
     <div class="bot-content">
-
       <div class="bot-description">
-        <p>
+         <p>
           The DAX30 EA is a systematic trading algorithm developed for the German DAX index, operating on 4-hour candles (H4) to exploit strong directional movements typical of European market sessions.
         <p>
           The strategy adapts dynamically to volatility and market structure, executing trades only during optimized trading hours to ensure reliable liquidity and execution.
@@ -174,37 +201,45 @@ Dynamic Stop Loss and Take Profit management allows the system to respond effect
           Built for traders seeking structured exposure to one of Europe’s most volatile indices, the EA emphasizes discipline, adaptability and capital protection over aggressive trading behavior.
         </p>
 
-        <div class="bot-cta inline">
-          <a href="#" class="btn-primary">Purchase</a>
+        <div class="bot-cta">
+          <label for="dax-license">Select license</label>
+          <select id="dax-license" class="license-select">
+            <option value="monthly">Monthly</option>
+            <option value="annual">Annual</option>
+            <option value="lifetime">Lifetime</option>
+          </select>
+
+          <a
+            id="dax-buy"
+            class="btn-primary"
+            href="checkout.html?product=dax&license=monthly">
+            Purchase EA
+          </a>
         </div>
       </div>
 
       <div class="bot-video">
         <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
       </div>
-
     </div>
+  </details>
+</div>
+
+<div class="bot-block">
+ <div class="bot-header fr40"></div>
+  <p class="bot-tagline">Controlled exposure EA for the French market.</p>
+
+  <div class="bot-metrics">
+    <div class="metric-card"><span>Winrate</span><strong>~80%</strong></div>
+    <div class="metric-card"><span>Yearly Profit</span><strong>~15%</strong></div>
+    <div class="metric-card"><span>Max DD</span><strong>5%</strong></div>
+    <div class="metric-card"><span>Timeframe</span><strong>H4</strong></div>
   </div>
-</section>
 
-
-<!-- ================= FR ================= -->
-<section class="category-section">
-  <div class="bot-block">
-    <h3 class="bot-title">FR40 INDEX</h3>
-
-
-    <div class="bot-metrics">
-      <div class="metric-card"><span>Winrate</span><strong>~80%</strong></div>
-      <div class="metric-card"><span>Yearly profit</span><strong>~15%</strong></div>
-      <div class="metric-card"><span>Profit Factor</span><strong>&gt; 5.0xx</strong></div>
-      <div class="metric-card"><span>Risk Control</span><strong>Dinamic SL / TP</strong></div>
-      <div class="metric-card"><span>Max Drawdown</span><strong>5%xx</strong></div>
-      <div class="metric-card"><span>Nº Order</span><strong>16</strong></div>
-    </div>
+  <details class="bot-details">
+    <summary>View system details</summary>
 
     <div class="bot-content">
-
       <div class="bot-description">
         <p>
           The FR40 EA targets the French CAC 40 index, operating on 4-hour timeframes to identify and trade structured market trends with reduced exposure to intraday volatility.
@@ -214,83 +249,105 @@ Dynamic Stop Loss and Take Profit management allows the system to respond effect
           Designed for a more measured market environment, the EA focuses on precision, controlled exposure and steady capital growth, making it suitable for traders who value consistency over frequency.
         </p>
 
-        <div class="bot-cta inline">
-          <a href="#" class="btn-primary">Purchase</a>
+        <div class="bot-cta">
+          <label for="fr40-license">Select license</label>
+          <select id="fr40-license" class="license-select">
+            <option value="monthly">Monthly</option>
+            <option value="annual">Annual</option>
+            <option value="lifetime">Lifetime</option>
+          </select>
+
+          <a
+            id="fr40-buy"
+            class="btn-primary"
+            href="checkout.html?product=fr40&license=monthly">
+            Purchase EA
+          </a>
         </div>
       </div>
 
       <div class="bot-video">
         <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
       </div>
-
     </div>
+  </details>
+</div>
+
+<div class="bot-block">
+  <div class="bot-header eth"></div>
+  <p class="bot-tagline">Volatility-adaptive crypto trend EA.</p>
+
+  <div class="bot-metrics">
+    <div class="metric-card"><span>Winrate</span><strong>~75%</strong></div>
+    <div class="metric-card"><span>Yearly Profit</span><strong>~35%</strong></div>
+    <div class="metric-card"><span>Max DD</span><strong>5%</strong></div>
+    <div class="metric-card"><span>Timeframe</span><strong>H4</strong></div>
   </div>
-</section>
 
-
-<!-- ================= ETH ================= -->
-<section class="category-section">
-  <div class="bot-block">
-    <h3 class="bot-title">ETHUSD</h3>
-
-
-    <div class="bot-metrics">
-      <div class="metric-card"><span>Winrate</span><strong>~75%</strong></div>
-      <div class="metric-card"><span>Yearly profit</span><strong>~35%</strong></div>
-      <div class="metric-card"><span>Profit Factor</span><strong>&gt; 5.0xx</strong></div>
-      <div class="metric-card"><span>Risk Control</span><strong>Dinamic SL / TP</strong></div>
-      <div class="metric-card"><span>Max Drawdown</span><strong>5%xx</strong></div>
-      <div class="metric-card"><span>Nº Order</span><strong>27</strong></div>
-    </div>
+  <details class="bot-details">
+    <summary>View system details</summary>
 
     <div class="bot-content">
-
       <div class="bot-description">
-        <p>
+          <p>
           The ETHUSD EA is a systematic trend-following algorithm developed specifically for Ethereum, operating on H4 candles to capture sustained crypto market trends while avoiding excessive noise.
         <p>
          Given the higher volatility of digital assets, the strategy incorporates adaptive Stop Loss and Take Profit logic, allowing risk parameters to scale dynamically with market conditions. Trades are executed selectively to avoid unfavorable volatility regimes.
          <p>
          Built for disciplined crypto traders, the EA prioritizes risk control, volatility awareness and structured execution in an environment known for rapid price expansion and contraction.
+        </p>
 
-        <div class="bot-cta inline">
-          <a href="#" class="btn-primary">Purchase</a>
+        <div class="bot-cta">
+          <label for="eth-license">Select license</label>
+          <select id="eth-license" class="license-select">
+            <option value="monthly">Monthly</option>
+            <option value="annual">Annual</option>
+            <option value="lifetime">Lifetime</option>
+          </select>
+
+          <a
+            id="eth-buy"
+            class="btn-primary"
+            href="checkout.html?product=eth&license=monthly">
+            Purchase EA
+          </a>
         </div>
       </div>
 
       <div class="bot-video">
         <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
       </div>
-
     </div>
+  </details>
+</div>
+
+
   </div>
 </section>
 
-
-
-  <!-- FOOTER -->
-  <footer>
-    © 2026 VisionEA. All rights reserved.
-<p>
-Risk Disclaimer
-</p>
-Trading financial instruments, including Forex, indices, cryptocurrencies, and CFDs, involves a high level of risk and may not be suitable for all investors. Leverage can work both for and against you. Before engaging in trading activities, you should carefully consider your investment objectives, level of experience, and risk tolerance.
-There is a possibility that you may lose part or all of your invested capital. You should never trade with money you cannot afford to lose. Trading decisions are your sole responsibility.
-All information provided on this website, including trading systems, expert advisors, strategies, and educational content, is intended for educational and informational purposes only. Nothing on this website constitutes financial, investment, or trading advice, nor should it be considered a recommendation to buy or sell any financial instrument.
-Past performance is not indicative of future results. Any examples, simulations, or hypothetical performance results have inherent limitations and do not represent actual trading outcomes.
-You are strongly advised to seek independent financial advice from a licensed professional before making any investment decisions.
-</p>
-Liability Disclaimer
-VisionEA assumes no responsibility for any losses or damages, direct or indirect, resulting from the use of the information, software, or services provided on this website.
-By using this website or any related products, you acknowledge that you understand and accept all associated risks.
-Hypothetical Performance Disclosure
-Hypothetical or simulated performance results have inherent limitations. Unlike real trading results, simulated results do not reflect actual trading conditions and may not account for factors such as liquidity, slippage, or execution delays. No representation is made that any account will achieve profits or losses similar to those shown.
-Intellectual Property Notice
-</p>
-All content on this website, including text, design, source code, graphics, images, videos, and branding elements, is the intellectual property of VisionEA unless otherwise stated. Unauthorized reproduction, distribution, or modification of any content is strictly prohibited.
-</p> 
+<!-- ================= FOOTER ================= -->
+<footer class="full-bg footer">
+  <div class="container footer-text">
+    <p>© 2026 VisionEA. All rights reserved.</p>
+    <p>
+      Trading involves risk. Past performance is not indicative of future results.
+      Content provided for educational purposes only.
+    </p>
+  </div>
 </footer>
 
+<!-- ================= PRODUCTS SCRIPT ================= -->
+<script src="products.js"></script>
 
 </body>
 </html>
+
+<script>
+  document.querySelectorAll(".license-select").forEach(select => {
+    select.addEventListener("change", e => {
+      const product = select.id.replace("-license", "");
+      const btn = document.getElementById(`${product}-buy`);
+      btn.href = `checkout.html?product=${product}&license=${select.value}`;
+    });
+  });
+</script>
